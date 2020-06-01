@@ -14,20 +14,29 @@ This package was technically created in 2019.3, but it's not really doing anythi
 ## Okay, so how do I use it?
 
 Stupid simple, really:
+
 1. Import it! Everything is under the namespace ElementStudio.StateMachines, so go ahead and use this line to do it:
+
 ```C#
 using ElementStudio.StateMachines;
 ```
+
 2. Create a StateMachine object somewhere in your code:
+
 ```C#
 StateMachine stateMachine;
 ```
+
 3. Initialize your StateMachine with a State:
+
 ```C#
 stateMachine.Initialize(new State(stateMachine));
 ```
+
 The StateMachine is passed in so the State can make changes to it.
+
 4. Create new classes that extend the State class in order to create your own states!
+
 ```C#
 using ElementStudio.StateMachines;
 
