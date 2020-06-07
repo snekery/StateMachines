@@ -13,12 +13,17 @@
         {
             private set
             {
-                CurrentState.Exit();
-                CurrentState = value;
+                if(currentState != null) currentState.Exit();
+                currentState = value;
                 value.Enter();
             }
-            get => CurrentState;
+            get
+            {
+                return currentState;
+            }
         }
+
+        private State currentState = null;
         /// <summary>
         /// Initializes the StateMachine with an initial state.
         /// </summary>
