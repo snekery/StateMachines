@@ -1,6 +1,6 @@
 {
     "name": "com.elementstudio.statemachines",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "displayName": "State Machines",
     "description": "A package containing simple scripts for creating finite state machines in code.",
     "unity": "2018.3",

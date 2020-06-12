@@ -8,7 +8,6 @@
         /// <summary>
         /// Property containing the current state.
         /// </summary>
-        /// <value></value>
         public State CurrentState
         {
             private set
@@ -28,7 +27,11 @@
         /// Initializes the StateMachine with an initial state.
         /// </summary>
         /// <param name="initialState">The initial State.</param>
-        public void Initialize(State initialState) => CurrentState = initialState;
+        public void Initialize(State initialState)
+        {
+            if(CurrentState != null) return;
+            CurrentState = initialState;
+        }
         /// <summary>
         /// Transitions to a new State from the current state.
         /// </summary>
