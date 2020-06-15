@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.0] - 2020-06-15
+
+### Changed
+
+- Moved the namespaces of the State and StateMachine classes to ```StateMachines```.
+
 ## [0.2.0] - 2020-06-07
 
 ### Changed

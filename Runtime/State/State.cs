@@ -1,4 +1,4 @@
-namespace ElementStudio.StateMachines
+namespace StateMachines
 {
     /// <summary>
     /// Base class for creating States for use with a StateMachine.

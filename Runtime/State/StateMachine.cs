@@ -1,4 +1,4 @@
-﻿namespace ElementStudio.StateMachines
+﻿namespace StateMachines
 {
     /// <summary>
     /// Base class for providing a finite state machine.
@@ -12,7 +12,7 @@
         {
             private set
             {
-                if(currentState != null) currentState.Exit();
+                if (currentState != null) currentState.Exit();
                 currentState = value;
                 value.Enter();
             }
@@ -29,7 +29,7 @@
         /// <param name="initialState">The initial State.</param>
         public void Initialize(State initialState)
         {
-            if(CurrentState != null) return;
+            if (CurrentState != null) return;
             CurrentState = initialState;
         }
         /// <summary>

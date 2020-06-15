@@ -4,8 +4,7 @@ A Unity package that allows you to create finite state machines in Unity.
 
 ## Why?
 
-1. Because I'd like to.
-2. By creating a package, it's a lot easier to import this into a project.
+I believe that by turning this into a package, this will make it a lot faster to implement state machines in Unity, even if it doesn't take long normally. This is more of a personal project that I can use in game jams, indie games, and etc. so I won't have to recreate boilerplate code.
 
 ## How do I install?
 
@@ -15,10 +14,10 @@ This package was technically created in 2019.3, but it's not really doing anythi
 
 Stupid simple, really:
 
-1. Import it! Everything is under the namespace ElementStudio.StateMachines, so go ahead and use this line to do it:
+1. Import it! Everything is under the StateMachines namespace, so go ahead and use this line to do it:
 
 ```C#
-using ElementStudio.StateMachines;
+using StateMachines;
 ```
 
 2. Create a StateMachine object somewhere in your code:
@@ -38,9 +37,9 @@ The StateMachine is passed in so the State can make changes to it.
 4. Create new classes that extend the State class in order to create your own states!
 
 ```C#
-using ElementStudio.StateMachines;
+using StateMachines;
 
-public class RadicalState : State {
+public class WackyNewState : State {
     public override void PhysicsUpdate(float delta) {
         base.PhysicsUpdate(delta);
     }
